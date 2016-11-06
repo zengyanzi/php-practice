@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="jquery.js"></script>
+	<style type="text/css">
+		div{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<input type="text" name="username" id="username" />
+	<input type="button" value="validation" />
+	<div></div>
+	<script>
+		$('input[type=button]').click(function() {
+			$.get('process.php',{'username':$('#username').val()},function(data){
+				if (data=='true') {
+					$('div').html('this username is acceptable');
+				}else{
+					$('div').html('this username has been used');
+				}
+			})
+		});
+	</script>
+</body>
+</html>

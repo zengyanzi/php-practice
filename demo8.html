@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="jquery.js"></script>
+</head>
+<body>
+	<form id="form">
+		username:<input type="text" name="username" id="username"/>
+		email:<input type="text" name="email" id="email"/>
+		url:<input type="text" name="url" id="url"/>
+		qq:<input type="text" name="qq" id="qq"/>
+		skype:<input type="text" name="skype" id="skype"/>
+		<input type="button" value="submit">
+	</form>
+	<script>
+		$('input[type=button]').click(function() {
+			var data=$('#form').serialize();
+			$.ajax({
+				url:'demo8.php',
+				type:'post',
+				data:data,
+				success:function(){
+					
+				}
+
+			})
+		});
+	</script>
+</body>
+</html>

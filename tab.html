@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="jquery.js"></script>
+	<script src="jquery-tab-1.0.js"></script>
+	<style type="text/css">
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	body{
+		margin: 50px;
+	}
+	.tabNav{
+		list-style: none;
+	}
+	.tabNav li{
+		float: left;
+		width: 150px;
+		height: 26px;
+		line-height: 26px;
+		text-align: center;
+		margin-right: 3px;
+		border: 1px solid #abcdef;
+		border-bottom: none;
+		cursor: pointer;
+	}
+	.tabContent{
+		clear: both;
+
+	}
+	.tabContent div{
+		border:1px solid #abcdef;
+		display: none;
+		width: 500px;
+		height: 200px;
+		
+	}
+	.tabNav li.current{
+		background: #abcdef;
+		color: #fff;
+		font-weight: 700;	
+	}
+	</style>
+	<script>
+	$(function(){
+		$('.tab').tab();
+	})
+	</script>
+</head>
+<body>
+
+	<div class="tab">
+		<ul class="tabNav">
+			<li class="current">html</li>
+			<li>css</li>
+			<li>javascript</li>
+		</ul>
+		<div class="tabContent">
+			<div style="display:block">html</div>
+			<div>css</div>
+			<div>javascript</div>
+		</div>
+	</div>
+	
+</body>
+</html>

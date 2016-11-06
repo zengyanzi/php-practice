@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="jquery.js"></script>
+	<script src="jquery-table-1.0.js"></script>
+	<style type="text/css">
+	table{
+		width: 100%;
+		border: 1px solid #abcdef;
+		border-collapse: collapse;
+
+	}
+	th,td{
+		height: 28px;
+		border:1px solid #abcdef;
+	}
+	.evenRow{
+		background: #38a38a;
+	}
+	.oddRow{
+		background: #09f;
+	}
+	.currentRow{
+		background: yellow;
+	}
+		</style>
+		<script>
+			$(function(){
+				$('#table1').table();
+			})
+		</script>
+</head>
+<body>
+
+	<table id="table1">
+		<tr>
+			<th>name</th>
+			<th>age</th>
+			<th>height</th>
+			<th>weight</th>
+		</tr>
+		<tr>
+			<td>fred</td>
+			<td>22</td>
+			<td>187</td>
+			<td>76</td>
+		</tr>
+
+		<tr>
+			<td>vincent</td>
+			<td>25</td>
+			<td>176</td>
+			<td>68</td>
+		</tr>
+		<tr>
+			<td>jenny</td>
+			<td>24</td>
+			<td>167</td>
+			<td>56</td>
+		</tr>
+		<tr>
+			<td>jenny</td>
+			<td>24</td>
+			<td>167</td>
+			<td>56</td>
+		</tr>
+		<tr>
+			<td>jenny</td>
+			<td>24</td>
+			<td>167</td>
+			<td>56</td>
+		</tr>
+		<tr>
+			<td>jenny</td>
+			<td>24</td>
+			<td>167</td>
+			<td>56</td>
+		</tr>
+
+	</table>
+</body>
+</html>

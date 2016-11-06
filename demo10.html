@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="jquery.js"></script>
+	<script src="demo1.js"></script>
+	<style type="text/css">
+	#div1{
+		width: 150px;
+		height: 150px;
+		background: #abcdef;
+	}
+	</style>
+
+</head>
+<body>
+	<div id="div1"></div>
+	<!-- <input type="button" value="click"> -->
+	<script>
+		// var a="Im the alert"
+		// var a="Im the extend alert"
+		// var a="Im the namespace alert"
+		// $('input').click(function() {
+		// 	$.zjenny.myAlert(a);
+		// 	// $.myAlert2();
+		// });
+		// var div=$('#div1');
+		// div.css({
+		// 	'top': ($(window).height()-div.height())/2,
+		// 	'left': ($(window).width()-div.width())/2,
+		// 	'position':'absolute'
+		// });
+		var div=$('#div1');
+		$.jenny.centerDiv(div);
+	</script>
+</body>
+</html>

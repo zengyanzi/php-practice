@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="jquery.js"></script>
+</head>
+<body>
+	<input type="button" value="aquire data"/>
+	<div id="info"></div>
+	<script>
+		$('input').click(function() {
+			$.ajax({
+				url:'demo2.php?'+Math.random(),
+				type:'get',
+				success:function(data){
+					alert(data)
+				}
+			});
+		});
+	</script>
+</body>
+</html>

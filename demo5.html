@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="jquery.js"></script>
+	<style type="text/css">
+		div{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<input type="text" name="username" id="username" />
+	<input type="button" value="validation" />
+	<div></div>
+	<script>
+		$('input[type=button]').click(function() {
+			var url='process.php';
+			var sendData={'username':$('#username').val()};
+			$.ajax({
+				url:url,
+				type:'get',
+				data:sendData,
+				success:function(data){
+					if (data=='true') {
+					$('div').html('this username is acceptable');
+				}else{
+					$('div').html('this username has been used');
+				}
+				}
+
+			})
+		});
+	</script>
+</body>
+</html>

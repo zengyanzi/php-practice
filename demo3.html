@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="jquery.js"></script>
+	<style type="text/css">
+		.load{
+			width: 500px;
+			height: 300px;
+			border: 1px solid #abcdef;
+		}
+	</style>
+</head>
+<body>
+	<input type="button" value="load" />
+	<div class="load"></div>
+	<script>
+		$('input[type=button]').click(function() {
+			$.get('test.txt?data='+Math.random(),function(data){
+				$('.load').html(data)
+
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="jquery.js"></script>
+</head>
+<body>
+	<input type="button" value="aquire news list">
+	<div id="info">
+		<ul></ul>
+	</div>
+	<script>
+		$('input').click(function() {
+			var ul=$('#info>ul');
+			$.ajax({
+				url:'demo9.php?'+Math.random(),
+				type:'get',
+				dataType:'xml',
+				success:function(xml){
+					$(xml).find('title').each(function(){
+						// xml ,cannot use html()
+						// alert($(this).text());
+						ul.append('<li>'+$(this).text()+'</li>');
+					})
+				}
+			})
+		});
+	</script>
+</body>
+</html>

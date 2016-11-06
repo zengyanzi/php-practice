@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="jquery.js"></script>
+	<style type="text/css">
+		div{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<input type="text" name="username" id="username" />
+	<input type="button" value="validation" />
+	<div></div>
+	<script>
+	$('input[type=button]').click(function() {
+		//json
+		var send={'username':$('#username').val()}
+		$('div').load('process.php',send,function(data){
+				alert(data);
+		});
+			});
+	</script>
+</body>
+</html>
