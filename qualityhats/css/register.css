@@ -1,0 +1,158 @@
+HARSET "UTF-8";
+
+.sign {
+	width: 750px;
+	height: 540px;
+	background: #fff;
+	position: relative;
+	padding-top: 10px;
+	float:left;
+}
+
+.sign>h5 {
+	display: block;
+	position: absolute;
+	left: 30px;
+	top: 10px;
+	font-size: 14px;
+	color: #333;
+}
+
+.sign form {
+	display: block;
+	width: 600px;
+	height: auto;
+	margin: 0px auto;
+}
+
+.sign form ul {
+	padding-top: 10px;
+	font-size: 14px;
+	color: #666;
+}
+
+.sign form ul li {
+	margin-top: 30px;
+	width: 700px;
+	height: 30px;
+	list-style: none;
+}
+
+.sign form ul li #aaa {
+	display: inline-block;
+	width: 120px;
+	height: 40px;
+}
+
+.sign form ul li .inputxt {
+	display: inline-block;
+	position: relative;
+	width: 300px;
+	height: 35px;
+	border-radius: 2px;
+	border-color: #ddd;
+}
+
+.sign form ul li .inputxt[type="password"] {
+	background-image: url("../img/key.png");
+	background-repeat: no-repeat;
+	background-position: 280px center;
+}
+
+.sign form ul li .inputxt[class*="m1"],.sign form ul li .inputxt[class*="m2"]
+	{
+	width: 140px;
+}
+
+.sign form ul li .zhuce {
+	display: block;
+	background: #f33599;
+	border: none;
+	width: 300px;
+	height: 40px;
+	border-radius: 5px;
+	font-size: 16px;
+	color: #fff;
+	font-family: "Microsoft YaHei";
+	cursor: pointer;
+	margin: 0 148px;
+	padding: 0;
+}
+
+.sign form ul li .zhuce:hover {
+	background: #f10180
+}
+
+.sign form ul .check {
+	position: relative;
+	display: block;
+	line-height: 29px;
+	margin: 30px auto;
+	width: 50%;
+}
+
+.sign form ul .check .checkbox {
+	width: 30px;
+	height: 30px;
+	position: relative;
+}
+
+.sign form ul .check .before {
+	display: block;
+	position: absolute;
+	background: url("../img/radio-false.png") no-repeat 2px center;
+	width: 30px;
+	height: 30px;
+	top: 0;
+	left: 5px;
+}
+
+.sign form ul .check .ll {
+	background: url("../img/radio-true.png") no-repeat 2px center
+}
+
+.Validform_wrong,.Validform_right {
+	padding-left: 0;
+}
+
+.registerform .need {
+	color: #f00;
+}
+
+.changegogogo {
+	color: #0068b7;
+	font-size: 12px;
+}
+
+.mobile-code {
+	display: inline-block;
+	background: #eee;
+	text-align: center;
+	width: 140px;
+	height: 40px;
+	border: 3px;
+	color: #666;
+	line-height: 40px;
+	border-radius: 3px;
+}
+
+.mobile-code:hover {
+	text-decoration: none;
+}
+
+.rest-time {
+	display: inline-block;
+	background: #e6e6e6;
+	width: auto;
+	height: 29px;
+	border: 0 solid;
+	text-align: left;
+	cursor: not-allowed;
+	font-family: "Microsoft YaHei";
+	border-radius: 3px;
+	display: none;
+}
+
+.new-checkbox:before {
+	background: #f00;
+}

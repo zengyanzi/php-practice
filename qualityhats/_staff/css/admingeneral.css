@@ -1,0 +1,213 @@
+﻿.adminlogin
+{
+    width:100%;
+    text-align:center;
+    padding-top:200px;
+}
+.adminlogin h2
+{
+    text-align:center;
+}
+
+#loginbox {
+    margin:0px auto;
+    width:300px; 
+}
+#loginbox li
+{
+    width:300px;
+    list-style:none;
+    height:30px;
+    margin-top:10px;
+}
+#menu_left{
+	width:200px;
+	float:left;
+	padding-top:30px;
+}
+#menu_left ul li{
+	height:30px;
+	line-height:30px;
+	padding-left:20px;
+	list-style: none;
+}
+#content_right{
+	float:left;
+	padding-left:20px;
+}
+.list 
+{
+    margin-top:20px;   
+}
+.list ul
+{
+     height:30px;
+     padding:0px;
+}
+.list ul li
+{
+    float:left;
+    list-style:none;
+}
+.customer_name
+{
+    width:100px;
+}
+.customer_email
+{
+    width:180px;
+}
+.customer_phone
+{
+    width:120px;
+}
+.customer_op
+{
+    width:100px;
+}
+#add_supplier
+{
+    height:30px;
+    margin:10px 0px;
+    padding-left:0px;
+}
+#add_supplier li
+{
+    list-style:none;
+    float:left;
+    padding:0px 10px;
+}
+.category_ul
+{
+    padding:0px;
+    height:30px;
+    margin-top:20px;
+}
+.category_ul li
+{
+    height:30px;
+    float:left;
+    line-height:30px;
+    list-style:none;
+}
+.category_name
+{
+    width:300px;
+}
+.category_status
+{
+    width:160px;
+}
+.category_op
+{
+    width:100px;
+}
+.item_ul
+{
+    height:80px;
+    padding-left:0px;
+    margin:10px 0px;
+}
+.item_ul li
+{
+    float:left;
+    list-style:none;
+}
+.li_img
+{
+    width:90px;
+    text-align:center;
+}
+.li_img img
+{
+    width:80px;
+    height:80px;
+}
+.li_name
+{
+    line-height:26px;
+    width:320px;
+    overflow:hidden;
+}
+.li_color
+{
+    width:280px;
+    line-height:80px;
+}
+.li_price
+{
+    width:80px;
+    line-height:80px;
+}
+.li_op
+{
+    width:60px;
+    line-height:80px;
+}
+.price{
+	font-weight: bold;
+	color:#f10180;
+}
+.edit_item
+{
+    margin-top:10px;
+}
+.edit_item ul
+{
+    margin-top:10px;
+    width:850px;
+    height:30px;
+    line-height:30px;
+}
+.edit_item ul li
+{
+    float:left;
+    list-style:none;
+    height:30px;
+    width:600px;
+}
+.edit_item ul li:first-child
+{
+    width:200px;
+    text-align:center;
+}
+#item_name
+{
+    height:24px;
+    width:600px;
+    line-height:24px;
+}
+#item_desc
+{
+    height:80px;
+    width:600px;
+    line-height:24px;
+}
+#image_ul
+{
+    height:180px;
+}
+#item_img
+{
+    height:110px;
+    width:110px;
+}
+.item_img
+{
+    height:110px;
+    width:110px;
+}
+#desc_ul
+{
+    height:90px;
+}
+#item_desc
+{
+    line-height:24px;
+}
+#item_price
+{
+    height:24px;
+    width:200px;
+    line-height:24px;
+}
